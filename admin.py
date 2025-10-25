@@ -22,7 +22,7 @@ def search_student():
             print(f"{s['name']} | {s['reg_number']} | {s['faculty']} | {s['department']}")
         print()
     else:
-        print("❌ Student not found.\n")
+        print("Student not found.\n")
 
 def delete_student():
     students = read_students()
@@ -30,7 +30,7 @@ def delete_student():
     updated = [s for s in students if s['reg_number'].lower() != reg_number]
 
     if len(updated) == len(students):
-        print("❌ Student not found.\n")
+        print("Student not found.\n")
     else:
         write_students(updated)
         print("Student deleted successfully.\n")
