@@ -1,5 +1,3 @@
-
-
 ```markdown
 # 🏫 School Registration System
 
@@ -34,17 +32,33 @@ Registration No: fcp/ccs/25/0001
 
 ---
 
+## 🔐 Default Login Details
+
+### 👨‍💼 Admin Account
+Use the following credentials to access the admin dashboard:
+
+```
+
+Username: admin
+Password: admin123
+
+```
+
+> 🔒 Tip: You can modify these credentials in the `auth.py` file for security purposes.
+
+---
+
 ## 🛠️ Technical Details
 
 - **Language:** Python 3
 - **Architecture:** Modular (split into multiple files for clarity)
 - **Data Storage:** CSV file (`students.csv`) for persistent storage
 - **Modules:**
-- `main.py` → Entry point for the application
-- `student.py` → Handles student operations
-- `admin.py` → Handles admin features
-- `auth.py` → Manages authentication (login and password)
-- `storage.py` → Reads/writes data to files
+  - `main.py` → Entry point for the application
+  - `student.py` → Handles student operations
+  - `admin.py` → Handles admin features
+  - `auth.py` → Manages authentication (login and password)
+  - `storage.py` → Reads/writes data to files
 
 ---
 
@@ -140,3 +154,4 @@ Your registration number: fcp/ccs/25/0001
 This project is open-source and available under the [MIT License](LICENSE).
 
 ```
+
